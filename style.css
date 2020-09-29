@@ -2,12 +2,6 @@
     background-color: black !important;
 }
 
-.navbar-brand{
-    font-weight: bold;
-    font-family: monospace;
-    font-size: 30px;
-}
-
 .navbar-dark .navbar-nav .nav-link{
     font-weight: 700;
     font-size: 15px;
@@ -16,4 +10,32 @@
 
 .navbar-dark .navbar-nav .nav-item{
     margin: 0 15px;
+}
+
+.nav-link:hover{
+    transform: scale(1.5)
+}
+
+.bi-house-door-fill:hover{
+    transform: scale(1.5)
+}
+
+.first{
+    text-align: center;
+    background-color: black;
+    color: white;
+    letter-spacing: 10px;
+}
+.about{
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+.card{
+    margin: auto;
+}
+
+.card-title{
+    text-align: center;
 }
