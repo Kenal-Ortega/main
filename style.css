@@ -40,3 +40,17 @@
     text-align: center;
 }
 
+.projects{
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+.carousel-item{
+    max-height: 750px;
+}
+
+.carousel-caption{
+    background-color: black;
+    color: white;
+}
