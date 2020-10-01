@@ -20,7 +20,7 @@
         <div class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-            <!-- <a class="navbar-brand" href="#">KENAL ORTEGA</a> -->
+              <a href="#home">
             <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-house-door-fill" fill="white" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
                 <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
@@ -34,13 +34,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Projects<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#projects">Projects<span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item active">
-                    <a class="nav-link" href="#">Contact<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#contact">Contact<span class="sr-only">(current)</span></a>
                   </li>
             </div>
             </div>
@@ -51,6 +51,7 @@
         <!-- NAVBAR END -->
 
             <!-- Name start -->
+            <a name="home">
         <div class="jumbotron jumbotron-fluid first">
             <div class="container">
               <h1 class="display-4">KENAL ORTEGA</h1>
@@ -60,6 +61,7 @@
           <!-- Name end -->
 
           <!-- About start -->
+          <a name="about">
           <div class="jumbotron jumbotron-fluid about">
             <div class="container">
               <h1 class="display-4">ABOUT</h1>
@@ -109,6 +111,7 @@
             <!-- PROJECTS START -->
 
             <!-- jumbotron start -->
+            <a name="projects">
             <div class="jumbotron jumbotron-fluid projects">
               <div class="container">
                 <h1 class="display-4">PROJECTS</h1>
@@ -176,12 +179,174 @@
             <!-- PROJECTS END -->
 
             <!-- CONTACT START -->
+            <a name="contact">
             <div class="jumbotron jumbotron-fluid contact">
               <div class="container">
                 <h1 class="display-4">CONTACT</h1>
               </div>
             </div>
-            <!-- CONTACT END -->
+          
+            <!-- CONTACT CARD START -->
+            <div class="card contactcard" style="width: 75%;">
+              <div class="card-body">
+
+                <!-- BEGIN FORM -->
+                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/moqpvygj" method="post">
+                  <fieldset id="fs-frm-inputs">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                    <label for="email-address">Email Address</label>
+                    <input type="email" name="_replyto" id="email-address" placeholder="email@domain" required="">
+                    <label for="message">Message</label>
+                    <textarea rows="5" name="message" id="message" placeholder="Enter message here" required=""></textarea>
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                  </fieldset>
+                  <input type="submit" value="Submit">
+                </form><style>/* reset */
+                #fs-frm input,
+                #fs-frm select,
+                #fs-frm textarea,
+                #fs-frm fieldset,
+                #fs-frm optgroup,
+                #fs-frm label,
+                #fs-frm #card-element:disabled {
+                  font-family: inherit;
+                  font-size: 100%;
+                  color: black;
+                  border: none;
+                  border-radius: 0;
+                  display: block;
+                  width: 100%;
+                  padding: 0;
+                  margin: 0;
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                }
+                #fs-frm label,
+                #fs-frm legend,
+                #fs-frm ::placeholder {
+                  font-size: .825rem;
+                  margin-bottom: .5rem;
+                  padding-top: .2rem;
+                  display: flex;
+                  align-items: baseline;
+                }
+                
+                /* border, padding, margin, width */
+                #fs-frm input,
+                #fs-frm select,
+                #fs-frm textarea,
+                #fs-frm #card-element {
+                  border: 1px solid rgba(0,0,0,0.2);
+                  background-color: rgba(255,255,255,0.9);
+                  padding: .75em 1rem;
+                  margin-bottom: 1.5rem;
+                }
+                #fs-frm input:focus,
+                #fs-frm select:focus,
+                #fs-frm textarea:focus {
+                  background-color: white;
+                  outline-style: solid;
+                  outline-width: thin;
+                  outline-color: white;
+                  outline-offset: -1px;
+                }
+                #fs-frm [type="text"],
+                #fs-frm [type="email"] {
+                  width: 100%;
+                }
+                #fs-frm [type="button"],
+                #fs-frm [type="submit"],
+                #fs-frm [type="reset"] {
+                  width: auto;
+                  cursor: pointer;
+                  -webkit-appearance: button;
+                  -moz-appearance: button;
+                  appearance: button;
+                }
+                #fs-frm [type="button"]:focus,
+                #fs-frm [type="submit"]:focus,
+                #fs-frm [type="reset"]:focus {
+                  outline: none;
+                }
+                #fs-frm [type="submit"],
+                #fs-frm [type="reset"] {
+                  margin-bottom: 0;
+                }
+                #fs-frm select {
+                  text-transform: none;
+                }
+                
+                #fs-frm [type="checkbox"] {
+                  -webkit-appearance: checkbox;
+                  -moz-appearance: checkbox;
+                  appearance: checkbox;
+                  display: inline-block;
+                  width: auto;
+                  margin: 0 .5em 0 0 !important;
+                }
+                
+                #fs-frm [type="radio"] {
+                  -webkit-appearance: radio;
+                  -moz-appearance: radio;
+                  appearance: radio;
+                }
+                
+                /* address, locale */
+                #fs-frm fieldset.locale input[name="city"],
+                #fs-frm fieldset.locale select[name="state"],
+                #fs-frm fieldset.locale input[name="postal-code"] {
+                  display: inline;
+                }
+                #fs-frm fieldset.locale input[name="city"] {
+                  width: 52%;
+                }
+                #fs-frm fieldset.locale select[name="state"],
+                #fs-frm fieldset.locale input[name="postal-code"] {
+                  width: 20%;
+                }
+                #fs-frm fieldset.locale input[name="city"],
+                #fs-frm fieldset.locale select[name="state"] {
+                  margin-right: 3%;
+                }
+                </style>
+              </div>
+            </div>
+            <!-- END FORM -->
+            <!-- CONTACT CARD END -->
+              
+            <!-- EMPTY JUBOTRON STRT -->
+            <div class="jumbotron jumbotron-fluid mt">
+              <div class="container">
+              </div>
+            </div>
+            <!-- EMPTY JUMBOTRON END -->
+
+            <!-- BEGIN F00TER --> 
+                <!-- Footer -->
+          <footer class="page-footer font-small blue footer">
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2020 Copyright: KENAL ORTEGA
+              <br>
+
+              <a href="https://github.com/Kenal-Ortega"target="_blank"><i class="fab fa-github-square"></i>
+
+              <a href="https://www.linkedin.com/in/kenal-ortega/"target="_blank"> 
+              <i class="fab fa-linkedin"></i>
+
+
+              <i class="fas fa-file"></i>
+            
+            </div>
+            <!-- Copyright -->
+
+            </footer>
+            <!-- Footer -->
+            <!-- END F00TER -->
+            
+            
+            
 
             
 
