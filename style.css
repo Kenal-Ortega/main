@@ -46,7 +46,7 @@
     color: black;
 }
 
-.carousel{
+/* .carousel{
     width: 75%;
     height: 50%;
     margin: auto;
@@ -59,8 +59,25 @@
 
 .carousel-caption:hover{
     background-color: rgb(0, 0, 0, 0.7);
-}
+} */
 
+.carousel{
+    background-color: black;
+  }
+
+.carousel-inner{
+    height: 300px;
+  }
+
+.carousel-caption{
+    color: #fff;
+    top: 50%;
+  }
+
+.pcenter{
+    padding-top: 10%;
+    text-transform: uppercase;
+}
 .contact{
     text-align: center;
     background-color: white;
@@ -85,8 +102,12 @@
 }
 
 .contactcard{
-    background-color: rgba(53, 53, 53, 0.858);
-    color: white;
+    background-color: black;
+    text-decoration-color: white;
+}
+
+.input{
+    color: white !important;
 }
 
 .mt{
